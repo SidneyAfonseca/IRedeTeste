@@ -110,4 +110,13 @@ Caso já possua instalado, pode começar por aqui:
      
     docker-composer up -d 
      
-    
+  4.## Modelo de Dados para Login
+
+Abaixo está o modelo de dados JSON para a autenticação de um usuário no sistema:
+
+```json
+{
+  "Username": "testuser",
+  "Password": "password",
+  "TokenLifetime": 10
+}
