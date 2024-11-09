@@ -107,6 +107,7 @@ Caso já possua instalado, pode começar por aqui:
    dotnet ef database update --project Clean.Architecture.Inventory.Persistence.csproj --startup-project ../Clean.Architecture.Inventory.API/Clean.Architecture.Inventory.API.csproj
    ```
   3. Para executar  utilizar o Docker:
+     
     docker-composer up -d 
-     ```
+     
     
