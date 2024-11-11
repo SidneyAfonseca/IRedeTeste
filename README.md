@@ -109,10 +109,14 @@ Caso já possua instalado, pode começar por aqui:
   3. Para executar  utilizar o Docker:
      
     docker-composer up -d 
-     
+    
+   Obs: se a API não iniciar de primeira execute novamente para que o banco de dados seja criado ao executar a api 
+ 
+     docker run -d --name clean-architecture-inventory-api -p 8080:80 clean-architecture-inventory-api
+    
   4.## Modelo de Dados para Login
 
-Abaixo está o modelo de dados JSON para a autenticação de um usuário no sistema:
+Abaixo está o modelo de dados JSON para a autenticação de um usuário no sistema: http://localhost:8080/swagger
 
 ```json
 {
