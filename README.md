@@ -112,7 +112,7 @@ Caso já possua instalado, pode começar por aqui:
     
    Obs: se a API não iniciar de primeira execute novamente para que o banco de dados seja criado ao executar a api 
  
-     docker run -d --name clean-architecture-inventory-api -p 8080:80 clean-architecture-inventory-api
+     docker start clean-architecture-inventory-api
     
   4.## Modelo de Dados para Login
 
