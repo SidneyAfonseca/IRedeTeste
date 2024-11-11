@@ -124,6 +124,12 @@ var app = builder.Build();
 // Middleware de Logging de Requisições
 app.UseSerilogRequestLogging();
 
+// Verificar e aplicar migrações automaticamente após o app ser construído
+using (var scope = app.Services.CreateScope())
+{
+	var dbContext = scope.ServiceProvider.GetRequiredService<InventoryControlDbContext>();
+	dbContext.Database.Migrate(); // Aplica as migrações pendentes, se houver
+}
 // Configuração do pipeline HTTP
 if (app.Environment.IsDevelopment())
 {
